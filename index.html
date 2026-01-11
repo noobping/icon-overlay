@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SVG Overlay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top">
+    <h1>Test SVG Icon</h1>
+
+    <label>
+      <span>Upload SVG icon</span>
+      <input id="fileA" type="file" accept=".svg,image/svg+xml" />
+    </label>
+
+    <label>
+      <span>Edit SVG XML</span>
+      <pre id="svgText" contenteditable="true" class="editor"></pre>
+    </label>
+
+    <div class="bar">
+      <button id="applyBtn" type="button">Apply</button>
+      <button id="formatBtn" type="button">Format</button>
+    </div>
+  </div>
+
+  <div class="frame">
+    <div class="layer" id="layerA" aria-label="Laag 1"></div>
+    <div class="layer" id="layerB" aria-label="Laag 2"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
